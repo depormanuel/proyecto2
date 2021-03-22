@@ -17,6 +17,8 @@ public class Circle  extends TwoDimensionalShape{
     /**
      * Constructor por defecto que toma el radio y el centro del circulo para
      * crear el objeto.
+     * @param center
+     * @param radius
      */
     public Circle( Point center,double radius) 
     {
@@ -27,6 +29,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Constructor para clonar el objeto. 
+     * @param circle
      */
     public Circle(Circle circle)
     {
