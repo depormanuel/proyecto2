@@ -99,6 +99,7 @@ class Triangle extends TwoDimensionalShape {
      * en un archivo externo.
      */
     @Override
+    @SuppressWarnings("empty-statement")
     public void print(PrintWriter out) 
     {
         super.print(out);
