@@ -14,6 +14,7 @@ abstract class ThreeDimensionalShape extends Shape{
     /**
      * Devuelve un 0, esta clase se sobreescribira.
      * Devuelve el valor del area de superficie.
+     * @return superficie
      */
     public double getSurfaceArea()
     {
@@ -24,6 +25,7 @@ abstract class ThreeDimensionalShape extends Shape{
     /**
      * Devuelve un 0, esta clase se sobreescribira.
      * Devuelve el valor del volumen.
+     * @return volume
      */
     public double getVolume()
     {
