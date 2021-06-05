@@ -45,6 +45,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * Metodo que establece el radio de la esfera.
+     * @param radius
      */
     public void setRadius(double radius) 
     {
