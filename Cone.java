@@ -10,7 +10,7 @@ import java.io.PrintWriter;
  * @version 2.0 Date: 21/03/2021
  */
 
- class Cone extends ThreeDimensionalShape{
+public class Cone extends ThreeDimensionalShape{
     //Instancia las variables radio y altura.
     double radius;
     double height;
