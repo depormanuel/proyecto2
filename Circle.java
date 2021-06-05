@@ -17,8 +17,8 @@ public class Circle  extends TwoDimensionalShape{
     /**
      * Constructor por defecto que toma el radio y el centro del circulo para
      * crear el objeto.
-     * @param center
-     * @param radius
+     * @param center Centro del circulo
+     * @param radius Radio del circulo
      */
     public Circle( Point center,double radius) 
     {
@@ -29,7 +29,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Constructor para clonar el objeto. 
-     * @param circle
+     * @param circle Parametro circulo
      */
     public Circle(Circle circle)
     {
@@ -51,7 +51,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Metodo para establecer el radio del circulo.
-     * @param radius
+     * @param radius Radio del circulo
      */
     public void setRadius(double radius) 
     {
@@ -72,7 +72,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Metodo para establecer el centro del circulo.
-     * @param center
+     * @param center Devuelve el centro.
      */
     public void setCenter(Point center) 
     {
@@ -84,7 +84,7 @@ public class Circle  extends TwoDimensionalShape{
     /**
      * Sobreescribe el metodo print, para imprimir los parametros del circulo
      * en un archivo externo.
-     * @param out
+     * @param out Devuelve los parametros del circulo.
      */
     @Override
     public void print(PrintWriter out) 
