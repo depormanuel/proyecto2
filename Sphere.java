@@ -17,6 +17,7 @@ public class Sphere extends ThreeDimensionalShape{
 
     /**
      * Constructor por defecto que toma el radio crear el objeto.
+     * @param radius
      */
     public Sphere(double radius) 
     {
@@ -26,6 +27,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      *  Constructor para clonar el objeto.
+     * @param sp
      */
     public Sphere(Sphere sp)
     {
@@ -35,6 +37,7 @@ public class Sphere extends ThreeDimensionalShape{
     
      /**
      * Metodo que devuelve el radio de la esfera.
+     * @return radius
      */
     public double getRadius() 
     {
@@ -54,8 +57,8 @@ public class Sphere extends ThreeDimensionalShape{
 
     
     /**
-     * Sobreescribe el metodo getSurfaceArea.
-     * Devuelve el area superficial de la esfera.
+     * Sobreescribe el metodo getSurfaceArea.Devuelve el area superficial de la esfera.
+     * @return area
      */
     @Override
     public double getSurfaceArea() 
@@ -67,8 +70,8 @@ public class Sphere extends ThreeDimensionalShape{
 
     
     /**
-     * Sobreescribe el metodo getVolume.
-     * Devuelve el volumen de la esfera.
+     * Sobreescribe el metodo getVolume.Devuelve el volumen de la esfera.
+     * @return volume
      */
     @Override
     public double getVolume() 
@@ -80,6 +83,7 @@ public class Sphere extends ThreeDimensionalShape{
     /**
      * Sobreescribe el metodo print, para imprimir los parametros del rectangulo
      * en un archivo externo.
+     * @param out
      */
     @Override
     public void print(PrintWriter out)
