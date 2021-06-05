@@ -7,6 +7,7 @@ import java.io.PrintWriter;
  * La clase circulo contiene radio y centro del circulo.
  * @author  Manuel Aranda Perez
  * @version 2.0 Date: 21/03/2021
+ * @see TwoDimensionalShape
  */
 
 public class Circle  extends TwoDimensionalShape{
