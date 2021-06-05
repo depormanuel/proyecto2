@@ -8,12 +8,16 @@ import java.io.PrintWriter;
  * 
  * @author  Manuel Aranda Perez
  * @version 2.0 Date: 21/03/2021
+ * @see ThreeDimensionalShape
  */
 
-class Cylinder extends ThreeDimensionalShape{
+public class Cylinder extends ThreeDimensionalShape{
     //Instancia las variables radio y altura.
     double radius , height;
 
+    /**
+     * Constructor vacio
+     */
     public Cylinder() {
     }
 
@@ -21,6 +25,8 @@ class Cylinder extends ThreeDimensionalShape{
     /**
      * Constructor por defecto que toma el radio y la altura del cilindro para
      * crear el objeto. 
+     * @param radius radio
+     * @param height altura
      */
     public Cylinder(double radius, double height) 
     {
@@ -32,6 +38,7 @@ class Cylinder extends ThreeDimensionalShape{
    
     /**
      * Constructor para clonar el objeto.
+     * @param cyl cilindro
      */
     public Cylinder(Cylinder cyl)
     {
@@ -42,6 +49,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Metodo que devuelve el radio del cilindro.
+     * @return radio
      */
     public double getRadius() 
     {
@@ -51,6 +59,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Metodo para establecer el radio del cilindro.
+     * @param radius radio
      */
     public void setRadius(double radius) 
     {
@@ -60,6 +69,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Metodo que devuelve la altura del cilindro.
+     * @return altura
      */
     public double getHeight() 
     {
@@ -69,6 +79,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Metodo para establecer la altura del cilindro.
+     * @param height altura
      */
     public void setHeight(double height) 
     {
@@ -80,6 +91,7 @@ class Cylinder extends ThreeDimensionalShape{
     /**
      * Sobreescribe el metodo getSurfaceArea.
      * Devuelve el area superficial del cilindro.
+     * @return area
      */
     @Override
     public double getSurfaceArea() 
@@ -93,6 +105,7 @@ class Cylinder extends ThreeDimensionalShape{
     /**
      * Sobreescribe el metodo getVolume.
      * Devuelve el volumen del cilindro.
+     * @return volumen
      */
     @Override
     public double getVolume() 
@@ -101,11 +114,10 @@ class Cylinder extends ThreeDimensionalShape{
     }
 
     
-    
-    
     /**
      * Sobreescribe el metodo print, para imprimir los parametros del cilindro
      * en un archivo externo.
+     * @param out print
      */
     @Override
     public void print(PrintWriter out) 

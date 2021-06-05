@@ -11,7 +11,7 @@ import java.io.PrintWriter;
  *  @author  Manuel Aranda Perez
  *  @version 2.0 Date: 21/03/2021
  */
-class Point 
+public class Point 
 {
     // Instacia las variables x e y, representan las coordenadas.
     private double x ;
@@ -29,6 +29,8 @@ class Point
     
     /**
      * Este constructor toma dos double e inicializa las variables.
+     * @param x x
+     * @param y y
      */
     public Point(double x, double y) 
     {
@@ -39,6 +41,7 @@ class Point
     
      /**
      * Constructor para clonar el objeto.
+     * @param pnt punto
      */
     public Point(Point pnt)
     {
@@ -49,6 +52,7 @@ class Point
    
      /**
      * Metodo que devuelve el valor de x.
+     * @return x
      */
     public double getX() 
     {
@@ -58,6 +62,7 @@ class Point
     
      /**
      * Metodo que establece el valor de x.
+     * @param x x
      */
     public void setX(double x) 
     {
@@ -67,6 +72,7 @@ class Point
     
     /**
      * Metodo que devuelve el valor de y.
+     * @return y
      */
     public double getY() 
     {
@@ -76,6 +82,7 @@ class Point
     
     /**
      * Metodo que establece el valor de y.
+     * @param y y
      */
     public void setY(double y) 
     {
@@ -85,8 +92,9 @@ class Point
     
     /**
      * Este es el metodo distance (distancia) que devuelve la distancia entre este punto y otro punto
-     * Toma un objeto de tipo Point como parametro.
-     * El parametro calcula la distancia de la linea.
+     * Toma un objeto de tipo Point como parametro.El parametro calcula la distancia de la linea.
+     * @param p punto
+     * @return distancia
      */
     public double  distance(Point p)
     {
@@ -98,6 +106,7 @@ class Point
     /**
      * Sobreescribe el metodo print, para imprimir los parametros del punto
      * en un archivo externo.
+     * @param out print
      */
     public void print(PrintWriter out)
     {

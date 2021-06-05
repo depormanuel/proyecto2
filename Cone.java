@@ -8,7 +8,9 @@ import java.io.PrintWriter;
  * 
  * @author  Manuel Aranda Perez
  * @version 2.0 Date: 21/03/2021
+ * @see ThreeDimensionalShape
  */
+
 
 public class Cone extends ThreeDimensionalShape{
     //Instancia las variables radio y altura.
@@ -18,6 +20,8 @@ public class Cone extends ThreeDimensionalShape{
     /**
      * Constructor por defecto que toma el radio y la altura del cono para
      * crear el objeto.
+     * @param radius Radio
+     * @param height Altura
      */
     public Cone(double radius, double height) 
     {
@@ -28,6 +32,7 @@ public class Cone extends ThreeDimensionalShape{
     
     /**
      * Constructor para clonar el objeto.
+     * @param con cono
      */ 
     public Cone(Cone con)
     {
@@ -39,6 +44,7 @@ public class Cone extends ThreeDimensionalShape{
   
     /**
      * Metodo que devuelve el radio del cono.
+     * @return radio
      */
     public double getRadius() 
     {
@@ -49,6 +55,7 @@ public class Cone extends ThreeDimensionalShape{
     
     /**
      * Metodo para establecer el radio del cono.
+     * @param radius radio
      */
     public void setRadius(double radius) 
     {
@@ -59,6 +66,7 @@ public class Cone extends ThreeDimensionalShape{
     
     /**
      * Metodo que devuelve la altura del cono.
+     * @return altura
      */
     public double getHeight() 
     {
@@ -69,6 +77,7 @@ public class Cone extends ThreeDimensionalShape{
     
     /**
      * Metodo para establecer la altura del cono.
+     * @param height altura
      */
     public void setHeight(double height) 
     {
@@ -80,6 +89,7 @@ public class Cone extends ThreeDimensionalShape{
     /**
      * Sobreescribe el metodo getSurfaceArea.
      * Devuelve el area superficial del cono.
+     * @return area
      */
     @Override
     public double getSurfaceArea() 
@@ -92,13 +102,13 @@ public class Cone extends ThreeDimensionalShape{
     /**
      * Sobreescribe el metodo getVolume.
      * Devuelve el volumen del cono.
+     *
+     * @return volumen
      */
     @Override
     public double getVolume() 
     {
-
         return (Math.PI * (this.radius)) * (this.radius  + Math.sqrt( ( this.radius * this.radius) + (this.height * this.height)));
-        
     }
 
     
@@ -106,6 +116,7 @@ public class Cone extends ThreeDimensionalShape{
     /**
      * Sobreescribe el metodo print, para imprimir los parametros del cono
      * en un archivo externo.
+     * @param out print
      */
     @Override
     public void print(PrintWriter out) 

@@ -10,15 +10,20 @@ import java.io.PrintWriter;
  * 
  * @author  Manuel Aranda Perez
  * @version 2.0 Date: 21/03/2021
+ * @see TwoDimensionalShape
  */
 
-class Triangle extends TwoDimensionalShape {
+public class Triangle extends TwoDimensionalShape {
 
     //Instancia las variables punto1, punto2, y punto3.
     private Point point1, point2, point3;
 
     /**
      * Constructor por defecto que toma tres puntos para crear el triangulo.
+     *
+     * @param pt1 p1
+     * @param py2 p2
+     * @param py3 p3
      */
     public Triangle(Point pt1, Point py2, Point py3) 
     {
@@ -31,6 +36,8 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Constructor para clonar el objeto. 
+     *
+     * @param t triangulo
      */
     public Triangle(Triangle t) 
     {
@@ -43,6 +50,8 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Metodo que devuelve el valor del punto1.
+     *
+     * @return punto1
      */
     public Point getPoint1() 
     {
@@ -51,6 +60,8 @@ class Triangle extends TwoDimensionalShape {
 
     /**
      * Metodo que establece el valor de punto1.
+     *
+     * @param point1 punto1
      */
     public void setPoint1(Point point1) 
     {
@@ -60,6 +71,8 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Metodo que devuelve el valor de punto2.
+     *
+     * @return punto2
      */
     public Point getPoint2() 
     {
@@ -69,6 +82,8 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Metodo que establece el valor de punto2.
+     *
+     * @param point2 punto2
      */
     public void setPoint2(Point point2) 
     {
@@ -79,6 +94,8 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Metodo que devuelve el valor de punto3.
+     *
+     * @return punto3
      */
     public Point getPoint3()
     {
@@ -87,6 +104,8 @@ class Triangle extends TwoDimensionalShape {
 
     /**
      * Metodo que establece el valor de punto3.
+     *
+     * @param point3 punto3
      */
     public void setPoint3(Point point3) 
     {
@@ -97,6 +116,8 @@ class Triangle extends TwoDimensionalShape {
     /**
      * Sobreescribe el metodo print, para imprimir los parametros del triangulo
      * en un archivo externo.
+     *
+     * @param out print
      */
     @Override
     @SuppressWarnings("empty-statement")
@@ -116,6 +137,8 @@ class Triangle extends TwoDimensionalShape {
     /**
      * Sobreescribe el metodo getArea.
      * Devuelve el area del triangulo.
+     *
+     * @return area
      */
     @Override
     public double getArea() 
@@ -135,6 +158,8 @@ class Triangle extends TwoDimensionalShape {
     /**
      * Sobreescribe el metodo getPerimeter.
      * Devuelve el perimetro del triangulo.
+     *
+     * @return perimetro
      */
     @Override
     public double getPerimeter() 

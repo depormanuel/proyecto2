@@ -8,9 +8,10 @@ import java.io.PrintWriter;
  * 
  * @author  Manuel Aranda Perez
  * @version 2.0 Date: 21/03/2021
+ * @see TwoDimensionalShape
  */
 
- class Rectangle  extends TwoDimensionalShape{
+public class Rectangle  extends TwoDimensionalShape{
 
     //Instancia las variables largo y ancho.
      double length;  
@@ -19,6 +20,8 @@ import java.io.PrintWriter;
     /**
      * Constructor por defecto que toma el largo y ancho del rectangulo para
      * crear el objeto.
+     * @param length largo
+     * @param width ancho
      */
     public Rectangle(double length, double width)
     {
@@ -29,6 +32,7 @@ import java.io.PrintWriter;
      
     /**
      * Constructor para clonar el objeto. 
+     * @param rect rectangulo
      */
     public Rectangle(Rectangle rect)
     {
@@ -39,6 +43,7 @@ import java.io.PrintWriter;
     
     /**
      * Metodo que devuelve el largo del rectangulo.
+     * @return largo
      */
     public double getLength() 
     {
@@ -49,6 +54,7 @@ import java.io.PrintWriter;
     
     /**
      * Metodo que establece el largo del rectangulo.
+     * @param length largo
      */
     public void setHeight(double length) 
     {
@@ -59,6 +65,7 @@ import java.io.PrintWriter;
 
     /**
      * Metodo que devuelve el ancho del rectangulo.
+     * @return ancho
      */
     public double getWidth() 
     {
@@ -68,6 +75,7 @@ import java.io.PrintWriter;
     
     /**
      * Metodo que establece el ancho del rectangulo.
+     * @param width ancho
      */
     public void setWidth(double width) 
     {
@@ -79,6 +87,7 @@ import java.io.PrintWriter;
     /**
      * Sobreescribe el metodo print, para imprimir los parametros del rectangulo
      * en un archivo externo.
+     * @param out print
      */
     @Override
     public void print(PrintWriter out) 
@@ -95,8 +104,8 @@ import java.io.PrintWriter;
     
     
     /**
-     * Sobreescribe el metodo getArea.
-     * Devuelve el area del rectangulo.
+     * Sobreescribe el metodo getArea.Devuelve el area del rectangulo.
+     * @return area
      */
     @Override
     public double getArea() 
@@ -107,8 +116,8 @@ import java.io.PrintWriter;
     
 
     /**
-     * Sobreescribe el metodo getPerimeter.
-     * Devuelve el perimetro del rectangulo.
+     * Sobreescribe el metodo getPerimeter.Devuelve el perimetro del rectangulo.
+     * @return perimtero
      */
     @Override
     public double getPerimeter() 
@@ -119,8 +128,8 @@ import java.io.PrintWriter;
     
     
     /**
-     * El metodo isSquare devuele un booleano dependiendo de la altura y el ancho.
-     * Verdadero sera un cuadrado, y falso sera un rectangulo.
+     * El metodo isSquare devuele un booleano dependiendo de la altura y el ancho.Verdadero sera un cuadrado, y falso sera un rectangulo.
+     * @return boolean
      */
     public boolean  isSquare()
     {

@@ -7,9 +7,10 @@ package proyectoED;
  * 
  * @author  Manuel Aranda Perez
  * @version 2.0 Date: 21/03/2021
+ * @see Shape
  */
 
-abstract class ThreeDimensionalShape extends Shape{
+public abstract class ThreeDimensionalShape extends Shape{
  
     /**
      * Devuelve un 0, esta clase se sobreescribira.

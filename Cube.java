@@ -8,15 +8,17 @@ import java.io.PrintWriter;
  * 
  * @author  Manuel Aranda Perez
  * @version 2.0 Date: 21/03/2021
+ * @see ThreeDimensionalShape
  */
 
- class Cube extends ThreeDimensionalShape{
+public class Cube extends ThreeDimensionalShape{
     //Instancia la variable largo.
     double length;
 
     /**
      * Constructor por defecto que toma el lado del cubo para
      * crear el objeto.
+     * @param length largo
      */
     public Cube(double length) 
     {
@@ -26,6 +28,7 @@ import java.io.PrintWriter;
      
     /**
      * Constructor para clonar el objeto.
+     * @param cube cubo
      */
     public Cube(Cube cube)
     {
@@ -35,6 +38,7 @@ import java.io.PrintWriter;
    
     /**
      * Metodo que devuelve el lado del cubo.
+     * @return lado
      */
     public double getLength() 
     {
@@ -44,6 +48,7 @@ import java.io.PrintWriter;
     
     /**
      * Metodo para establecer el lado del cubo.
+     * @param length lado
      */
     public void setSideLength(double length) 
     {
@@ -55,6 +60,7 @@ import java.io.PrintWriter;
     /**
      * Sobreescribe el metodo getSurfaceArea.
      * Devuelve el area superficial del cubo.
+     * @return area
      */
     @Override
     public double getSurfaceArea() 
@@ -67,6 +73,7 @@ import java.io.PrintWriter;
     /**
      * Sobreescribe el metodo getVolume.
      * Devuelve el volumen del cubo.
+     * @return volumen
      */
     @Override
     public double getVolume() 
@@ -78,6 +85,7 @@ import java.io.PrintWriter;
     /**
      * Sobreescribe el metodo print, para imprimir los parametros del cubo
      * en un archivo externo.
+     * @param out print
      */
     @Override
     public void print(PrintWriter out) 

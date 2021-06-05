@@ -11,9 +11,13 @@ import java.io.PrintWriter;
  * @version 2.0 Date: 21/03/2021
  */
 
-abstract class Shape {
+public abstract class Shape {
     
-   public void print(PrintWriter out) {
+    /**
+     *
+     * @param out print
+     */
+    public void print(PrintWriter out) {
   
    }
    
