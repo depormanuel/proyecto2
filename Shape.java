@@ -20,6 +20,7 @@ abstract class Shape {
    /**
      * Devuelve un 0, esta clase se sobreescribira.
      * Devuelve el valor del area.
+     * @return area de la figura
    */
    public double getArea()
    {
@@ -30,6 +31,7 @@ abstract class Shape {
    /**
      * Devuelve un 0, esta clase se sobreescribira.
      * Devuelve el valor del perimetro.
+     * @return perimetro de la figura
      */
    public double getPerimeter()
    {
