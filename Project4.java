@@ -13,7 +13,7 @@ public class Project4 {
 
     /**
      *
-     * @param args
+     * @param args Clase main
      */
     public static void main(String args[]) {
         try {
