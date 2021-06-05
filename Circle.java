@@ -40,6 +40,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Metodo que devuelve el radio del circulo.
+     * @return radius
      */
     public double getRadius() 
     {
@@ -50,6 +51,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Metodo para establecer el radio del circulo.
+     * @param radius
      */
     public void setRadius(double radius) 
     {
@@ -59,6 +61,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
     * Metodo que devuelve el centro del circulo.
+     * @return center
      */
     public Point getCenter() 
     {
@@ -69,6 +72,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Metodo para establecer el centro del circulo.
+     * @param center
      */
     public void setCenter(Point center) 
     {
@@ -80,6 +84,7 @@ public class Circle  extends TwoDimensionalShape{
     /**
      * Sobreescribe el metodo print, para imprimir los parametros del circulo
      * en un archivo externo.
+     * @param out
      */
     @Override
     public void print(PrintWriter out) 
@@ -95,8 +100,8 @@ public class Circle  extends TwoDimensionalShape{
 
     
     /**
-     * Sobreescribe el metodo getArea.
-     * Devuelve el area del circulo.
+     * Sobreescribe el metodo getArea.Devuelve el area del circulo.
+     * @return area
      */
     @Override
     public double getArea() 
@@ -106,8 +111,8 @@ public class Circle  extends TwoDimensionalShape{
 
     
     /**
-     * Sobreescribe el metodo getPerimeter.
-     * Devuelve el perimetro del circulo.
+     * Sobreescribe el metodo getPerimeter.Devuelve el perimetro del circulo.
+     * @return perimeter
      */
     @Override
     public double getPerimeter() {
