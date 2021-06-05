@@ -11,6 +11,10 @@ import java.util.ArrayList;
  */
 public class Project4 {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String args[]) {
         try {
             PrintWriter out = new PrintWriter(new FileWriter(args[0]));
